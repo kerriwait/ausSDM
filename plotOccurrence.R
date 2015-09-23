@@ -39,7 +39,6 @@ if (file.exists('australiancountry.shp')) {
 	print("Fetching data from GADM...")
 	gadm0 <- getData("GADM", country = "AUS", level = 0)
 	aus <- gSimplify(gadm0, tol=0.01, topologyPreserve=TRUE)
-
 }
 
 if (file.exists('australianstates.shp')) {
